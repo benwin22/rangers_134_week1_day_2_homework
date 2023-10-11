@@ -1,0 +1,182 @@
+/* SELECTORS TO ADD + DEFINITIONS 
+
+Simple Combinator : explains the relationship between the selectors
+4 dif combinators in CSS: 
+descendant selector (space): div p {}
+child selector (>): div > p {}
+adjacent sibling selector (+): div + p {}
+general sibling selector (~): div ~ p {}
+*ex:
+div p {
+  background-color: yellow;
+}
+
+Pseudo Elements : used to style specified parts of an element i.e.'::first-letter'
+
+-Style the first letter, or line, of an element
+-Insert content before, or after, the content of an element
+*syntax*
+selector::pseudo-element {
+  property: value;
+}
+*ex:
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+Pseudo Classes : used to define a special state of an element.
+-Style an element when a user mouses over it
+-Style visited and unvisited links differently
+-Style an element when it gets focus
+*syntax*: 
+selector:pseudo-class {
+  property: value;
+}
+*ex:
+unvisited link
+a:link {
+  color: #FF0000;
+}
+visited link
+a:visited {
+  color: #00FF00;
+}
+mouse over link
+a:hover {
+  color: #FF00FF;
+}
+selected link
+a:active {
+  color: #0000FF;
+}
+Attribute : [attribute] selector is used to select elements with a specified attribute.
+*ex: all <a> elements with a target attribue:
+a[target] {
+    background-color: color;
+}
+*/
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  padding-bottom: 15px;
+}
+
+header {
+  justify-self: center;
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+body {
+  background-image: linear-gradient(rgb(117, 158, 225), rgb(237, 227, 227));
+  cursor: default;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+}
+
+.container1 {
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: 200;
+  text-align: center;
+}
+
+ul>li {
+  display: inline;
+}
+
+ul>li>a {
+  padding: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  font-size: large;
+}
+
+#link {
+  text-decoration: none;
+  color: black;
+}
+
+#link:hover {
+  color: grey;
+}
+
+h3::first-letter {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: xx-large;
+}
+
+h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+}
+
+main p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.article1 {
+  text-align: left;
+  background-image: linear-gradient(rgb(117, 158, 225), rgb(237, 227, 227));
+  border-radius: 25px;
+  margin: 5%;
+  padding: 5%;
+}
+
+.article2 {
+  text-align: left;
+  background-image: linear-gradient(rgb(117, 158, 225), rgb(237, 227, 227));
+  border-radius: 25px;
+  margin: 5%;
+  padding: 5%;
+}
+
+#container4 {
+  padding-top: 2px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px
+}
+
+.boys {
+  border-radius: 25px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 5%;
+}
+
+.dog {
+  border-radius: 25px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 5%;
+}
+
+.cat {
+  border-radius: 25px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 5%;
+}
+
+footer {
+  padding-top: 10%;
+  text-align: center;
+}
